@@ -1,0 +1,44 @@
+
+body{
+    background-color: grey;
+    display: flex;
+    align-items: center;
+    min-width: 100vh;
+    justify-content: center;
+}
+.container{
+    margin-top: 150px;
+    width: 780px;
+    border: 1px solid deeppink;
+    border-radius: 20px;
+    padding: 35px 40px;
+}
+header h2 {
+    font-size: 1.6rem;
+  }
+  
+  header .column {
+    display: flex;
+    align-items: center;
+    gap: 15px;
+  }
+  
+  header .column span {
+    font-weight: 500;
+    font-size: 1.1rem;
+  }
+  .volume-slider input {
+    accent-color: #fff;
+  }
+  
+  .keys-check input {
+    width: 60px;
+    height: 30px;
+    accent-color: #fff;
+    appearance: none;
+  
+    border-radius: 30px;
+    background-color: #4b4b4b;
+    cursor: pointer;
+    position: relative;
+  }
