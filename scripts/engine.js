@@ -5,7 +5,7 @@ setTimeout(()=>{
 clicedKey.classList.remove("active") removi pois com essa parte não esta funicionando;
 },150); */
 const volumeSlider =document.querySelector(".volume-slider input")
-
+const keysCheck = document.querySelector(".Keys-check input");
 let audio = new Audio("tunes/a.wav");
 let mappedKeys = [];
 
@@ -30,7 +30,11 @@ document.addEventListener("keydown" ,
    
 });
 
+const showHideKeys = ()=>{
+    pianoKeys.forEach(key=> key.classList.toggle("hide"))
+}
 const handleVolume = (e)=>{
     audio.volume = e.target.value;
 }
 volumeSlider.addEventListener("input", handleVolume);
+keysCheck.addEventListener("clik",showHideKeys)
